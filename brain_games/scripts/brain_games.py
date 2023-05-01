@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-from brain_games.cli import welcome_user
+#Запускается командой 'poetry run python -m brain_games.scripts.brain_games' из консоли
+from brain_games.scripts.brain_even import even_game
 
 
 def main():
@@ -8,4 +9,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    welcome_user()
