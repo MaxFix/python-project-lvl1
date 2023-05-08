@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import random
+
 import prompt
 
 
@@ -19,14 +20,14 @@ def main():
             answers_count += 1
             continue
         elif number % 2 == 0 and answer.lower() == "no":
-            print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\n Let's try again, {name}!")
+            print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\n Let's try again, {name}!")
             continue
         elif number % 2 != 0 and answer.lower() == "no":
             print("Correct!")
             answers_count += 1
             continue
         elif number % 2 != 0 and answer.lower() == "yes":
-            print("'no' is wrong answer ;(. Correct answer was 'yes'.")
+            print("'yes' is wrong answer ;(. Correct answer was 'no'.")
             continue
         else:
             print("Incorrect input")
